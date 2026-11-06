@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Add the production URL before publishing:
+# Sitemap: https://example.com/sitemap.xml
