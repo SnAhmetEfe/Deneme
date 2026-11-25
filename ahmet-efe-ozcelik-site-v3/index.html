@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmet Efe Özçelik — From generation to use</title>
+<meta name="description" content="Ahmet Efe Özçelik — Electrical & Electronics Engineering student at Manisa Celal Bayar University, long-term quality intern at Schneider Electric, Chair of the IEEE MCBU Student Branch and team lead of a TÜBİTAK 2209-A energy efficiency project.">
+<meta name="author" content="Ahmet Efe Özçelik">
+<meta name="theme-color" content="#0C0E0B">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ahmet Efe Özçelik — From generation to use">
+<meta property="og:description" content="Electrical engineering student following energy from generation to use, and learning where it is lost.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Ahmet Efe Özçelik",
+"jobTitle":"Long Term Intern, Customer Satisfaction & Quality",
+"worksFor":{"@type":"Organization","name":"Schneider Electric"},
+"alumniOf":{"@type":"CollegeOrUniversity","name":"Manisa Celal Bayar University"},
+"email":"mailto:ahmetefeozcelik7@gmail.com",
+"sameAs":["https://www.linkedin.com/in/ahmet-efe-%C3%B6z%C3%A7elik","https://github.com/SnAhmetEfe"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- 3D power system: generator → transmission → MV substation → factory -->
+<canvas id="grid3d" aria-hidden="true"></canvas>
+<div class="shade" aria-hidden="true"></div>
+
+<header class="bar">
+  <a href="#top" class="brand"><span class="brand-dot"></span>A. E. Özçelik</a>
+  <nav aria-label="Sections">
+    <a href="#generate">Story</a>
+    <a href="#distribute">Schneider</a>
+    <a href="#work">Work</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </nav>
+</header>
+
+<!-- single-line diagram navigation -->
+<nav class="sld" aria-label="Stages">
+  <a href="#generate" data-for="generate"><i></i><span>Generate</span></a>
+  <a href="#transmit" data-for="transmit"><i></i><span>Transmit</span></a>
+  <a href="#distribute" data-for="distribute"><i></i><span>Distribute</span></a>
+  <a href="#use" data-for="use"><i></i><span>Use</span></a>
+</nav>
+
+<!-- HUD -->
+<div class="hud" aria-hidden="true">
+  <canvas id="scope" width="200" height="60"></canvas>
+  <div class="hud-read">
+    <span id="hudStage">00 · SYSTEM OVERVIEW</span>
+    <span>f = 50.00 Hz · 3φ · <b id="hudLoad">LOAD 40%</b></span>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section id="top" class="hero" data-cam="hero" data-stage="00 · SYSTEM OVERVIEW">
+  <p class="mono kicker"><span class="live"></span>Manisa, Türkiye · Electrical &amp; Electronics Engineering</p>
+  <h1 class="name">Ahmet Efe<br>Özçelik</h1>
+  <p class="lede">I follow energy from where it is generated to where it is used — and learn where it is <em>lost</em> along the way.</p>
+  <ul class="facts">
+    <li><span class="mono">Now</span>Quality intern, Schneider Electric</li>
+    <li><span class="mono">Lead</span>Chair, IEEE MCBU Student Branch</li>
+    <li><span class="mono">Research</span>TÜBİTAK 2209-A energy efficiency project</li>
+  </ul>
+  <div class="hero-cta">
+    <a class="btn" href="#generate">Follow the current ↓</a>
+    <a class="link" href="https://www.linkedin.com/in/ahmet-efe-%C3%B6z%C3%A7elik" target="_blank" rel="noopener">LinkedIn ↗</a>
+  </div>
+  <p class="mono hint">Drag to orbit the system · Click to send a surge</p>
+</section>
+
+<!-- ================= 01 GENERATE ================= -->
+<section id="generate" class="stage" data-cam="gen" data-stage="01 · GENERATE">
+  <div class="panel">
+    <p class="mono step"><b>01</b> Generate <span>Where it started</span></p>
+    <h2>Every system starts with <em>a source.</em><br>Mine was a classroom — and the people outside it.</h2>
+
+    <div class="entry">
+      <p class="mono when"><span class="ph">[year]</span> – present</p>
+      <h3>Manisa Celal Bayar University</h3>
+      <p class="role">B.Sc. Electrical &amp; Electronics Engineering · 4th year</p>
+      <p>Power systems, circuits and energy. The theory every later step is built on — and the reason I wanted to see it working in the real world.</p>
+    </div>
+
+    <div class="entry">
+      <p class="mono when">Sep 2024 – Jul 2025 · Manisa</p>
+      <h3>IEEE MCBU · Power &amp; Energy Society</h3>
+      <p class="role">Chair</p>
+      <p>Worked on renewable energy and energy efficiency topics and organised technical events that brought industry engineers to students — including a Tea &amp; Talk with a Schneider Electric technical engineer.</p>
+      <p class="added"><span class="mono">What it added</span>My first real connection between energy theory and industry.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 TRANSMIT ================= -->
+<section id="transmit" class="stage" data-cam="tx" data-stage="02 · TRANSMIT">
+  <div class="panel">
+    <p class="mono step"><b>02</b> Transmit <span>Connecting people and projects</span></p>
+    <h2>A line is only useful if it <em>connects</em> something.</h2>
+
+    <div class="entry">
+      <p class="mono when">Jul 2025 – Jul 2026</p>
+      <h3>IEEE MCBU Student Branch</h3>
+      <p class="role">Project Coordinator, Executive Board</p>
+      <p>Planned and coordinated the branch's projects. Built teams with the technical committees, researched and sourced materials, and brought students from different disciplines into the work.</p>
+      <p class="added"><span class="mono">What it added</span>Seeing a project as a system of people, resources and time.</p>
+    </div>
+
+    <div class="entry">
+      <p class="mono when">Jul 2026 – present</p>
+      <h3>IEEE MCBU Student Branch</h3>
+      <p class="role">Chair of the Board</p>
+      <p>Leading the branch's executive board — responsibility for the whole network, not one line of it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 DISTRIBUTE — SCHNEIDER ================= -->
+<section id="distribute" class="stage stage-key" data-cam="dist" data-stage="03 · DISTRIBUTE · MV">
+  <div class="panel">
+    <p class="mono step step-green"><b>03</b> Distribute <span>Current chapter</span></p>
+    <h2 class="big">Schneider<br>Electric</h2>
+    <p class="lead-in">Learning quality where it is made — on a <em>medium-voltage switchgear</em> production line.</p>
+    <dl class="spec">
+      <dt class="mono">Role</dt><dd>Long Term Intern · Customer Satisfaction &amp; Quality</dd>
+      <dt class="mono">Site</dt><dd>Manisa Factory, Türkiye · <span class="ph">[start month]</span> – present</dd>
+      <dt class="mono">Product</dt><dd>MV switchgear — epoxy components and the SM6-36 range</dd>
+      <dt class="mono">Tools</dt><dd>LDS e-Quality digital quality tracking · lean problem-solving</dd>
+    </dl>
+    <blockquote class="quote">
+      Quality is not a check at the end of the line. It is designed into the flow — and every defect prevented is energy, material and time that never has to be spent twice.
+      <span class="ph">[edit in your own words]</span>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ================= 04 USE ================= -->
+<section id="use" class="stage" data-cam="use" data-stage="04 · USE · EFFICIENCY">
+  <div class="panel">
+    <p class="mono step"><b>04</b> Use <span>Where efficiency is won</span></p>
+    <h2>The cleanest energy is the energy <em>you never waste.</em></h2>
+
+    <div class="entry">
+      <p class="mono when"><span class="ph">[dates]</span></p>
+      <h3>TÜBİTAK 2209-A Research Programme</h3>
+      <p class="role">Team Lead · Funded energy efficiency project</p>
+      <p>Undergraduate research on energy efficiency. <span class="ph">[one sentence on the topic]</span></p>
+    </div>
+
+    <div class="eff">
+      <label for="eta" class="mono eff-label">Factory efficiency <output id="etaOut" for="eta">70</output>%</label>
+      <input id="eta" type="range" min="40" max="98" value="70">
+      <div class="eff-rows">
+        <div><span class="mono">Input</span><i><b id="bIn"></b></i><em id="vIn">143</em></div>
+        <div><span class="mono">Useful</span><i><b class="g" style="width:40%"></b></i><em>100</em></div>
+        <div><span class="mono">Heat</span><i><b id="bLoss" class="h"></b></i><em id="vLoss">43</em></div>
+      </div>
+      <p id="effMsg" class="eff-msg" aria-live="polite"></p>
+      <p class="mono eff-note">Watch the factory. Input = useful work ÷ efficiency.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SELECTED WORK ================= -->
+<section id="work" class="wide" data-cam="over" data-stage="05 · SELECTED WORK">
+  <div class="wide-inner">
+    <p class="mono step"><b>05</b> Selected work</p>
+    <h2>Things I have <em>led or built.</em></h2>
+
+    <article class="case">
+      <p class="mono case-n">W/01 · TÜBİTAK 2209-A · Team Lead</p>
+      <h3>Energy efficiency research project</h3>
+      <dl>
+        <div><dt class="mono">Problem</dt><dd class="ph">[What inefficiency did you study?]</dd></div>
+        <div><dt class="mono">Approach</dt><dd class="ph">[Method, measurements, team]</dd></div>
+        <div><dt class="mono">Outcome</dt><dd class="ph">[Real results only]</dd></div>
+        <div><dt class="mono">Learned</dt><dd class="ph">[One or two sentences]</dd></div>
+      </dl>
+    </article>
+
+    <article class="case">
+      <p class="mono case-n">W/02 · IEEE MCBU PES · Chair</p>
+      <h3>Bringing industry engineers to students</h3>
+      <dl>
+        <div><dt class="mono">Problem</dt><dd>Students learn about energy systems long before they meet the people who build them.</dd></div>
+        <div><dt class="mono">Approach</dt><dd>Technical events with industry speakers, such as a Tea &amp; Talk with a Schneider Electric technical engineer.</dd></div>
+        <div><dt class="mono">Outcome</dt><dd class="ph">[Events / attendees]</dd></div>
+        <div><dt class="mono">Learned</dt><dd class="ph">[One or two sentences]</dd></div>
+      </dl>
+    </article>
+
+    <article class="case">
+      <p class="mono case-n">W/03 · IEEE MCBU Executive Board · Project Coordinator</p>
+      <h3>Building multidisciplinary project teams</h3>
+      <dl>
+        <div><dt class="mono">Problem</dt><dd>Good student ideas stall without the right team or materials.</dd></div>
+        <div><dt class="mono">Approach</dt><dd>Formed teams with the technical committees, sourced materials and invited students from other disciplines.</dd></div>
+        <div><dt class="mono">Outcome</dt><dd class="ph">[Projects completed]</dd></div>
+        <div><dt class="mono">Learned</dt><dd>Coordination is engineering too.</dd></div>
+      </dl>
+    </article>
+  </div>
+</section>
+
+<!-- ================= NOW ================= -->
+<section id="now" class="wide" data-cam="over2" data-stage="06 · NOW">
+  <div class="wide-inner now-grid">
+    <div>
+      <p class="mono step"><b>06</b> Now</p>
+      <h2>What I am <em>working on.</em></h2>
+      <p class="mono muted">Updated November 2026</p>
+    </div>
+    <ul class="now-list">
+      <li><span class="mono">Working</span>Quality internship, Schneider Electric Manisa</li>
+      <li><span class="mono">Leading</span>IEEE MCBU Student Branch, Chair</li>
+      <li><span class="mono">Researching</span>Energy efficiency, TÜBİTAK 2209-A</li>
+      <li><span class="mono">Learning</span>Root cause analysis, 5S, Kaizen, Six Sigma basics</li>
+      <li><span class="mono">Studying</span>Final year, Electrical &amp; Electronics Eng.</li>
+      <li><span class="mono">Certified</span><span class="ph">[add verified certificates]</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact" data-cam="plan" data-stage="07 · CLOSED LOOP">
+  <p class="mono step"><b>07</b> Close the circuit</p>
+  <h2>Let's talk about energy,<br><em>quality, and doing more with less.</em></h2>
+  <p>Open to internships, graduate roles and projects on clean energy and efficiency.</p>
+  <div class="contact-links">
+    <a class="btn" href="mailto:ahmetefeozcelik7@gmail.com">ahmetefeozcelik7@gmail.com</a>
+    <a class="link" href="https://www.linkedin.com/in/ahmet-efe-%C3%B6z%C3%A7elik" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a class="link" href="https://github.com/SnAhmetEfe" target="_blank" rel="noopener">GitHub ↗</a>
+  </div>
+  <footer class="mono">© 2026 Ahmet Efe Özçelik</footer>
+</section>
+
+</main>
+<script src="scene.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
